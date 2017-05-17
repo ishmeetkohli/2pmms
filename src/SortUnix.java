@@ -5,7 +5,7 @@ public class SortUnix {
 		
         System.out.println("Sorting... be patient");
 		//Remove ".exe" for Mac and Linux
-        Runtime.getRuntime().exec("sort -k 2 taxpayers_30.txt -o taxpayers_30_sort.txt").waitFor();
+        Runtime.getRuntime().exec("sort -k 1 taxpayers_3M.txt -o taxpayers_3M_sort.txt").waitFor();
         
 		System.out.println("Time elapsed (sec) = " + (System.currentTimeMillis() - startTime) / 1000.0);
 	}
